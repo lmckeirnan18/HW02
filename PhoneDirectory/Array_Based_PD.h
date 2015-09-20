@@ -58,8 +58,8 @@ private:
 	public:
 		Directory_Entry() {} // Default no-argument constructor 
 		Directory_Entry(std::string the_name, std::string the_number) {
-			the_name = name;
-			the_number = number;
+			name = the_name;
+			number = the_number;
 		}
 		std::string get_name() const {
 			return name; 
