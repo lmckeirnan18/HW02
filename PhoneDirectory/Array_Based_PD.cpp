@@ -8,6 +8,7 @@
 #include <fstream>
 #include <istream>
 #include <ostream>
+#include <iostream>
 
 using namespace std;
 
@@ -118,22 +119,22 @@ string Phone_Directory::remove_entry(const string& name) // edited by Amanda // 
 	int num = find(name);
 	if (num != -1)
 	{
+		string phone = the_directory[num].get_number();
 		for (int i = num; i < size - 1; i++)
 		{
 			the_directory[i] = the_directory[i + 1];
 		}
+		return phone;
 	}
 	else if (num == -1)
 	{
 		cout << "The person you were looking for was not found." << endl;
+		return "";
 	}
-{
-
 	// Hint: you can use the code below to shift names down in the directory to remove the selected entry specified by "index"
 	// for (int i = index; i < size - 1; i++)
 		// the_directory[i] = the_directory[i + 1];
 
-	return "";
 }
 
 // Private method implementation
