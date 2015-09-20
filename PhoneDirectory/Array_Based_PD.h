@@ -71,8 +71,8 @@ private:
 			number = new_number;
 		}
 	private:
-		string name;//Lily
-		string number;//Lily
+		std::string name;//Lily
+		std::string number;//Lily
 	};
 
 	// Private Functions
