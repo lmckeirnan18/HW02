@@ -99,7 +99,7 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	}
 	else if (entry != "")
 	{
-		cout << name << "'s number, " << entry << " , has been deleted." << endl;
+		cout << name << "'s number, " << entry << " , has been deleted frome the directory." << endl;
 		return;
 	}
 	
