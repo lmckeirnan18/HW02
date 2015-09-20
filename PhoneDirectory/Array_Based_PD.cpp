@@ -124,6 +124,9 @@ string Phone_Directory::remove_entry(const string& name) // edited by Amanda // 
 		}
 	}
 	else if (num == -1)
+	{
+		cout << "The person you were looking for was not found." << endl;
+	}
 {
 
 	// Hint: you can use the code below to shift names down in the directory to remove the selected entry specified by "index"
