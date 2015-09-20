@@ -94,12 +94,12 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	string entry = the_directory.remove_entry(name);
 	if (entry == "")
 	{
-		cout << "Name not found in directory." << endl;
+		cout << name << " not found in directory." << endl;
 		return;
 	}
 	else if (entry != "")
 	{
-		cout << name << "'s number, " << entry << " , has been deleted frome the directory." << endl;
+		cout << name << " : " << entry << " has been deleted from the directory." << endl;
 		return;
 	}
 	
